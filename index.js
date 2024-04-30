@@ -1,16 +1,13 @@
-var express = require('express')
-
-var app = express()
-
-const PORT = 3000
+const express = require("express");
+const app = express();
 
 var userList = [
-    "Fikret",
-    "Merve"
+    "Merve",
+    "Fikret"
 ]
 
-app.get('/api/user', function (req, res) {
-    return res.status(200).send(userList)
-})
+app.get("/", (req, res) => res.send(userList));
 
-app.listen(PORT, () => console.log(`Listening on ${PORT}`))
+app.listen(3000, () => console.log("Server ready on port 3000."));
+
+module.exports = app;
