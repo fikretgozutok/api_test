@@ -2,7 +2,7 @@ var express = require('express')
 
 var app = express()
 
-const PORT = process.env.PORT
+const PORT = 3000
 
 var userList = [
     "Fikret",
